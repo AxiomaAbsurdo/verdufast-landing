@@ -9,7 +9,7 @@ const HowItWorks = () => {
       icon: <Smartphone className="w-8 h-8" />,
       title: "Abre Telegram",
       subtitle: "1 minuto",
-      description: "Buscá @verdufastbot en Telegram o hacé clic en nuestro enlace directo.",
+      description: "Buscá @@verdufast_bot en Telegram o hacé clic en nuestro enlace directo.",
       details: "No necesitás descargar ninguna app adicional. Telegram es gratis y seguro.",
       image: "https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=400"
     },
@@ -201,7 +201,7 @@ const HowItWorks = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                onClick={() => window.open('https://t.me/verdufastbot', '_blank')}
+                onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
               >
                 🤖 Empezar en Telegram

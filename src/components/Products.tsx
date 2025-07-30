@@ -137,7 +137,7 @@ const Products = () => {
     
     const message = `¡Hola! Quiero hacer un pedido:\n\n${orderItems}\n\n¿Podrían confirmar disponibilidad y precio total?`;
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://t.me/verdufastbot?start=${encodedMessage}`, '_blank');
+    window.open(`https://t.me/@verdufast_bot?start=${encodedMessage}`, '_blank');
   };
 
   return (

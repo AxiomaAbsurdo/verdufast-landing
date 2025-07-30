@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
       questions: [
         {
           question: "¿Cómo hago un pedido?",
-          answer: "Es súper fácil. Solo tenés que abrir Telegram, buscar @verdufastbot y seguir las instrucciones. El bot te guiará paso a paso para elegir productos, confirmar tu dirección y realizar el pago."
+          answer: "Es súper fácil. Solo tenés que abrir Telegram, buscar @verdufast_bot y seguir las instrucciones. El bot te guiará paso a paso para elegir productos, confirmar tu dirección y realizar el pago."
         },
         {
           question: "¿Cuál es el pedido mínimo?",
@@ -224,7 +224,7 @@ const FAQ: React.FC = () => {
                 <span>Llamar ahora</span>
               </a>
               <button
-                onClick={() => window.open('https://t.me/verdufastbot', '_blank')}
+                onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
                 className="inline-flex items-center space-x-2 border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-6 py-3 rounded-xl font-medium transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -253,7 +253,7 @@ const FAQ: React.FC = () => {
             </a>
             
             <button
-              onClick={() => window.open('https://t.me/verdufastbot', '_blank')}
+              onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
               className="inline-flex items-center space-x-2 border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-6 py-3 rounded-xl font-semibold transition-colors"
             >
               <MessageCircle className="w-5 h-5" />

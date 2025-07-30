@@ -75,7 +75,7 @@ const Footer = () => {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="https://t.me/verdufastbot"
+                href="https://t.me/@verdufast_bot"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
@@ -221,7 +221,7 @@ const Footer = () => {
       {/* Floating CTA Button for Mobile */}
       <div className="fixed bottom-6 right-6 z-50 md:hidden">
         <button
-          onClick={() => window.open('https://t.me/verdufastbot', '_blank')}
+          onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
           className="bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110"
         >
           <MessageCircle className="w-6 h-6" />
