@@ -127,7 +127,7 @@ const Footer = () => {
                     href="tel:+59899123456"
                     className="text-gray-300 hover:text-emerald-400 transition-colors"
                   >
-                    099 123 456
+                    098 451 021
                   </a>
                   <p className="text-gray-500 text-sm">Llamadas y WhatsApp</p>
                 </div>

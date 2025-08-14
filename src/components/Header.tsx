@@ -65,7 +65,7 @@ const Header = () => {
               className="flex items-center space-x-1 text-emerald-600 hover:text-emerald-700"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-medium">099 451 021</span>
+              <span className="font-medium">098 451 021</span>
             </a>
           </div>
 

@@ -20,7 +20,7 @@ const FAQ: React.FC = () => {
         },
         {
           question: "¿Puedo modificar mi pedido después de confirmarlo?",
-          answer: "Sí, podés modificar tu pedido hasta 15 minutos después de confirmarlo. Contactanos por Telegram o llamá al 099 123 456 y te ayudamos con los cambios."
+          answer: "Sí, podés modificar tu pedido hasta 15 minutos después de confirmarlo. Contactanos por Telegram o llamá al 098 451 021 y te ayudamos con los cambios."
         }
       ]
     },
