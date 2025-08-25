@@ -258,7 +258,7 @@ const Pricing = () => {
                 onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
                 className="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center space-x-2"
               >
-                <span>🤖 Pedí por Telegram</span>
+                <span>🤖 Pedí por celular</span>
               </button>
               
               <a

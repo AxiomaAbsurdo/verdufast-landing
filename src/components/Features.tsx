@@ -27,8 +27,8 @@ const Features = () => {
     {
       icon: <Smartphone className="w-8 h-8" />,
       title: "Súper Fácil",
-      subtitle: "Vía Telegram",
-      description: "Pedí desde tu celular usando Telegram. Simple, rápido y sin complicaciones.",
+      subtitle: "Vía WhatsApp",
+      description: "Pedí desde tu celular. Simple, rápido y sin complicaciones.",
       color: "purple"
     }
   ];

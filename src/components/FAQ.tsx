@@ -228,7 +228,7 @@ const FAQ: React.FC = () => {
                 className="inline-flex items-center space-x-2 border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-6 py-3 rounded-xl font-medium transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>Preguntar en Telegram</span>
+                <span>Preguntar en WhatsApp</span>
               </button>
             </div>
           </div>
@@ -253,11 +253,11 @@ const FAQ: React.FC = () => {
             </a>
             
             <button
-              onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
+              // onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
               className="inline-flex items-center space-x-2 border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-6 py-3 rounded-xl font-semibold transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
-              <span>Telegram</span>
+              <span>WhatsApp</span>
             </button>
           </div>
 

@@ -84,7 +84,7 @@ const Hero = () => {
             {/* Subheadline */}
             <p className="text-xl text-gray-600 mb-8 max-w-2xl">
               Productos ultra frescos directo del mercado a tu puerta. 
-              Pedí fácil por Telegram y recibí en el día.
+              Pedí fácil por celular y recibí en el día.
             </p>
 
             {/* Key Benefits */}
