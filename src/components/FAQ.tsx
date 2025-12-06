@@ -244,13 +244,15 @@ const FAQ: React.FC = () => {
               <span>098 451 021</span>
             </a>
             
-            <button
-              // onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
+            <a
+              href="https://wa.me/598098451021"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-6 py-3 rounded-xl font-semibold transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
               <span>WhatsApp</span>
-            </button>
+            </a>
           </div>
 
           <div className="mt-6 flex items-center justify-center space-x-2 text-emerald-200 text-sm">
