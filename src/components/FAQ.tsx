@@ -12,15 +12,15 @@ const FAQ: React.FC = () => {
       questions: [
         {
           question: "¿Cómo hago un pedido?",
-          answer: "Es súper fácil. Solo tenés que abrir Telegram, buscar @verdufast_bot y seguir las instrucciones. El bot te guiará paso a paso para elegir productos, confirmar tu dirección y realizar el pago."
+          answer: "Es súper fácil. Ingresá a nuestra tienda online, elegí tus productos favoritos, agregálos al carrito, completá tus datos de entrega y confirmá tu pedido. Recibirás una confirmación inmediata con tu número de orden."
         },
         {
-          question: "¿Cuál es el pedido mínimo?",
-          answer: "No tenemos pedido mínimo. Podés pedir desde una sola fruta hasta hacer tu compra semanal completa. Sin embargo, en compras mayores a $800 el envío es gratis."
+          question: "¿Puedo ver mi historial de pedidos?",
+          answer: "Sí, al crear una cuenta podés acceder a tu historial de pedidos y repetir tus compras favoritas de manera más rápida."
         },
         {
           question: "¿Puedo modificar mi pedido después de confirmarlo?",
-          answer: "Sí, podés modificar tu pedido hasta 15 minutos después de confirmarlo. Contactanos por Telegram o llamá al 098 451 021 y te ayudamos con los cambios."
+          answer: "Contactanos lo antes posible después de confirmar tu pedido. Mientras no haya comenzado la preparación, podemos ayudarte con los cambios."
         }
       ]
     },
@@ -29,20 +29,16 @@ const FAQ: React.FC = () => {
       icon: <Truck className="w-5 h-5" />,
       questions: [
         {
-          question: "¿En cuánto tiempo llega mi pedido?",
-          answer: "Los pedidos llegan entre 30 y 90 minutos, dependiendo de tu ubicación y la disponibilidad de productos. Te enviamos actualizaciones en tiempo real del estado de tu pedido."
+          question: "¿Cuánto demora la entrega?",
+          answer: "El tiempo de entrega varía según la zona y disponibilidad. Te informamos el tiempo estimado al confirmar tu pedido y te mantenemos actualizado sobre el estado."
         },
         {
           question: "¿A qué zonas entregan?",
-          answer: "Entregamos en Montevideo, Canelones, Maldonado y Punta del Este. Estamos expandiendo constantemente nuestras zonas de cobertura. Consultá disponibilidad para tu zona específica."
+          answer: "Entregamos en diversas zonas de Uruguay. Al ingresar tu dirección de entrega, te confirmamos si llegamos a tu ubicación."
         },
         {
           question: "¿Qué pasa si no estoy en casa?",
-          answer: "Te contactamos antes de llegar. Si no estás, podemos coordinar una nueva hora de entrega el mismo día sin costo adicional, o entregar con algún vecino de confianza que designes."
-        },
-        {
-          question: "¿Entregan los fines de semana?",
-          answer: "Sí, entregamos de lunes a domingo de 8:00 AM a 8:00 PM. Los pedidos se pueden hacer hasta las 5:30 PM para entrega el mismo día."
+          answer: "Te contactamos antes de llegar. Si no estás, podemos coordinar una nueva hora de entrega o entregar con algún vecino de confianza que designes."
         }
       ]
     },
@@ -52,19 +48,15 @@ const FAQ: React.FC = () => {
       questions: [
         {
           question: "¿Qué tan frescos son los productos?",
-          answer: "Nuestros productos se seleccionan diariamente en el mercado central. Garantizamos máxima frescura o te devolvemos el dinero. Todos los productos tienen menos de 24 horas desde su cosecha o llegada al mercado."
+          answer: "Trabajamos directamente con productores locales para garantizar la máxima frescura. Los productos se seleccionan cuidadosamente para cada pedido."
         },
         {
-          question: "¿Puedo elegir el grado de maduración?",
-          answer: "¡Por supuesto! Podés especificar si querés frutas para consumir inmediato o para que maduren en casa. Nuestro equipo selecciona cuidadosamente según tus preferencias."
+          question: "¿Puedo agregar instrucciones especiales?",
+          answer: "¡Sí! Al completar tu pedido podés agregar notas de entrega con instrucciones especiales o preferencias sobre los productos."
         },
         {
           question: "¿Qué pasa si un producto no está disponible?",
-          answer: "Te contactamos inmediatamente para ofrecerte alternativas similares o eliminar el producto de tu pedido. Nunca sustituimos sin tu autorización."
-        },
-        {
-          question: "¿Tienen productos orgánicos?",
-          answer: "Sí, tenemos una selección de productos orgánicos certificados. Están claramente identificados en nuestro catálogo con precios especiales."
+          answer: "Te contactamos inmediatamente para ofrecerte alternativas similares o ajustar tu pedido. Nunca sustituimos productos sin tu autorización."
         }
       ]
     },
@@ -74,15 +66,15 @@ const FAQ: React.FC = () => {
       questions: [
         {
           question: "¿Qué métodos de pago aceptan?",
-          answer: "Aceptamos tarjetas de crédito y débito (Visa, Mastercard, American Express), Mercado Pago, transferencias bancarias y efectivo contra entrega. Todos sin recargo."
+          answer: "Aceptamos tarjetas de crédito y débito (Visa, Mastercard), transferencias bancarias y efectivo contra entrega."
         },
         {
           question: "¿Es seguro pagar online?",
-          answer: "Absolutamente. Usamos encriptación SSL de nivel bancario para proteger todos los datos. Nunca almacenamos información de tarjetas en nuestros servidores."
+          answer: "Absolutamente. Usamos encriptación SSL para proteger todos los datos de tu transacción de forma segura."
         },
         {
           question: "¿Puedo pagar en efectivo?",
-          answer: "Sí, podés pagar en efectivo al momento de la entrega. Nuestros repartidores llevan cambio para importes hasta $2000."
+          answer: "Sí, podés elegir la opción 'Pago Contra Entrega' y pagar en efectivo al momento de recibir tu pedido. O realizar el pago con el POST de Debito que el delivery puede llevar cuando se haga la entrega de tu pedido."
         }
       ]
     }
