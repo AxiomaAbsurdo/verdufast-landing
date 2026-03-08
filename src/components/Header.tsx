@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone, Clock } from 'lucide-react';
+import { CONTACT } from '../config/contact';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,11 +62,11 @@ const Header = () => {
               <span>Pedidos hasta 5:30 PM</span>
             </div> */}
             <a 
-              href="tel:+59898451021" 
+              href={`tel:${CONTACT.phoneE164}`} 
               className="flex items-center space-x-1 text-emerald-600 hover:text-emerald-700"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-medium">098 451 021</span>
+              <span className="font-medium">{CONTACT.phoneDisplay}</span>
             </a>
           </div>
 
@@ -103,11 +104,11 @@ const Header = () => {
                   <span>Pedidos hasta 5:30 PM</span>
                 </div>
                 <a 
-                  href="tel:+59899123456" 
+                  href={`tel:${CONTACT.phoneE164}`} 
                   className="flex items-center space-x-1 text-emerald-600"
                 >
                   <Phone className="w-4 h-4" />
-                  <span className="font-medium">098 451 021</span>
+                  <span className="font-medium">{CONTACT.phoneDisplay}</span>
                 </a>
               </div>
             </div>

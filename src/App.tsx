@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
+import ProfitabilitySection from './components/ProfitabilitySection';
 // import HowItWorks from './components/HowItWorks'; // DISABLED
 // import Products from './components/Products'; // DISABLED
 import Testimonials from './components/Testimonials';
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Hero />
       <Features />
+      <ProfitabilitySection />
       {/* <HowItWorks /> DISABLED - Contains "¿Cómo funciona?" and "¿Listo para probar?" sections */}
       {/* <Products /> DISABLED - Contains "Productos Frescos" section */}
       <Testimonials />

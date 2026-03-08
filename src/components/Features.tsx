@@ -1,5 +1,5 @@
 import React from 'react';
-import { Truck, Clock, Leaf, CreditCard, Smartphone, MapPin } from 'lucide-react';
+import { Truck, Leaf, CreditCard, Smartphone, Gift, Repeat, Timer } from 'lucide-react';
 
 const Features = () => {
   const features = [
@@ -27,8 +27,8 @@ const Features = () => {
     {
       icon: <Smartphone className="w-8 h-8" />,
       title: "Súper Fácil",
-      subtitle: "Vía WhatsApp",
-      description: "Pedí desde tu celular. Simple, rápido y sin complicaciones.",
+      subtitle: "App simple",
+      description: "Comprá desde el celular con una experiencia clara, rápida y sin fricción.",
       color: "purple"
     }
   ];
@@ -81,6 +81,30 @@ const Features = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
+            <div className="flex items-center gap-2 text-emerald-700 font-semibold">
+              <Repeat className="w-5 h-5" />
+              Reordenar en 1 toque
+            </div>
+            <p className="mt-2 text-sm text-gray-700">Botón fijo para repetir tu compra anterior sin volver a buscar productos.</p>
+          </div>
+          <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5">
+            <div className="flex items-center gap-2 text-amber-700 font-semibold">
+              <Gift className="w-5 h-5" />
+              Fidelidad visible
+            </div>
+            <p className="mt-2 text-sm text-gray-700">5 pedidos completados = envío gratis. Barra de progreso simple y clara.</p>
+          </div>
+          <div className="rounded-2xl border border-rose-200 bg-rose-50 p-5">
+            <div className="flex items-center gap-2 text-rose-700 font-semibold">
+              <Timer className="w-5 h-5" />
+              Urgencia local
+            </div>
+            <p className="mt-2 text-sm text-gray-700">Avisos reales de stock: “Solo quedan 3 paquetes de aguacates”.</p>
+          </div>
         </div>
 
         {/* Trust Guarantees - DISABLED
