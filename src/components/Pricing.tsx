@@ -190,7 +190,7 @@ const Pricing = () => {
               <div className="mt-4 p-4 bg-red-50 rounded-xl">
                 <p className="text-red-700 font-medium">
                   Lo sentimos, aún no llegamos a esa zona. 
-                  <a href="tel:+59899123456" className="underline ml-1">
+                  <a href="tel:+598092484485" className="underline ml-1">
                     Contactanos para consultar disponibilidad.
                   </a>
                 </p>
@@ -255,7 +255,7 @@ const Pricing = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
+                onClick={() => window.open('https://wa.me/598098451021', '_blank')}
                 className="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center space-x-2"
               >
                 <span>🤖 Pedí por celular</span>

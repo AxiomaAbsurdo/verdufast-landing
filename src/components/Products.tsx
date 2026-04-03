@@ -129,15 +129,15 @@ const Products = () => {
     return Object.values(cart).reduce((sum, quantity) => sum + quantity, 0);
   };
 
-  const handleTelegramOrder = () => {
+  const handleWhatsAppOrder = () => {
     const orderItems = Object.entries(cart).map(([productId, quantity]) => {
       const product = products.find(p => p.id === parseInt(productId));
       return `${product?.name}: ${quantity} ${product?.unit}`;
     }).join('\n');
-    
+
     const message = `¡Hola! Quiero hacer un pedido:\n\n${orderItems}\n\n¿Podrían confirmar disponibilidad y precio total?`;
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://t.me/@verdufast_bot?start=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/598098451021?text=${encodedMessage}`, '_blank');
   };
 
   return (
@@ -288,10 +288,10 @@ const Products = () => {
               </div>
               
               <button
-                onClick={handleTelegramOrder}
+                onClick={handleWhatsAppOrder}
                 className="w-full bg-white text-emerald-600 font-bold py-3 rounded-xl hover:bg-gray-100 transition-colors"
               >
-                🤖 Continuar en Telegram
+                📱 Continuar en WhatsApp
               </button>
             </div>
           </div>

@@ -34,8 +34,8 @@ const Hero = () => {
     };
   }, []);
 
-  // const handleTelegramClick = () => {
-  //   window.open('https://t.me/verdufastbot', '_blank');
+  // const handleWhatsAppClick = () => {
+  //   window.open('https://wa.me/598098451021', '_blank');
   // };
 
   return (
@@ -110,10 +110,10 @@ const Hero = () => {
             {/* CTA Buttons */}
             {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <button
-                onClick={handleTelegramClick}
+                onClick={handleWhatsAppClick}
                 className="group bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center space-x-2"
               >
-                <span>🤖 Pedí por Telegram</span>
+                <span>📱 Pedí por WhatsApp</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               

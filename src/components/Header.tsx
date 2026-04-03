@@ -103,7 +103,7 @@ const Header = () => {
                   <span>Pedidos hasta 5:30 PM</span>
                 </div>
                 <a 
-                  href="tel:+59899123456" 
+                  href="tel:+598092484485" 
                   className="flex items-center space-x-1 text-emerald-600"
                 >
                   <Phone className="w-4 h-4" />

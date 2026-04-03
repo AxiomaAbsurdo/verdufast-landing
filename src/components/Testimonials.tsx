@@ -18,7 +18,7 @@ const Testimonials = () => {
       name: "Carlos Rodríguez",
       location: "Montevideo",
       rating: 5,
-      text: "Súper fácil pedir por Telegram. Los precios son justos y la calidad excelente. Mi familia está encantada con el servicio.",
+      text: "Súper fácil pedir por WhatsApp. Los precios son justos y la calidad excelente. Mi familia está encantada con el servicio.",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150",
       verified: true,
       orderCount: 8
@@ -207,14 +207,14 @@ const Testimonials = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
+                onClick={() => window.open('https://wa.me/598098451021', '_blank')}
                 className="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
               >
-                🤖 Empezar en Telegram
+                📱 Empezar en WhatsApp
               </button>
               
               <a
-                href="tel:+59899123456"
+                href="tel:+598092484485"
                 className="border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300"
               >
                 📞 Llamar ahora

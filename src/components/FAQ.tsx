@@ -216,7 +216,7 @@ const FAQ: React.FC = () => {
                 <span>Llamar ahora</span>
               </a>
               <button
-                onClick={() => window.open('https://t.me/@verdufast_bot', '_blank')}
+                onClick={() => window.open('https://wa.me/598098451021', '_blank')}
                 className="inline-flex items-center space-x-2 border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-6 py-3 rounded-xl font-medium transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -237,7 +237,7 @@ const FAQ: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+59899123456"
+              href="tel:+598092484485"
               className="inline-flex items-center space-x-2 bg-white text-emerald-600 hover:bg-gray-100 px-6 py-3 rounded-xl font-semibold transition-colors"
             >
               <Phone className="w-5 h-5" />
