@@ -1,41 +1,12 @@
-import{ useEffect } from 'react';
-import { Shield } from 'lucide-react';
+import { QrCode, Store, Truck } from 'lucide-react';
 
 const Hero = () => {
   // const [setDeliveryCount] = useState(1247);
   // const [setTimeLeft] = useState({ hours: 5, minutes: 30 });
 
-  useEffect(() => {
-    // Animate delivery counter
-    // const interval = setInterval(() => {
-    //   setDeliveryCount(prev => prev + Math.floor(Math.random() * 3));
-    // }, 5000);
-
-    // Update countdown timer
-    const timer = setInterval(() => {
-      const now = new Date();
-      const cutoff = new Date();
-      cutoff.setHours(17, 30, 0, 0); // 5:30 PM
-      
-      if (now > cutoff) {
-        cutoff.setDate(cutoff.getDate() + 1);
-      }
-      
-      // const diff = cutoff.getTime() - now.getTime();
-      // const hours = Math.floor(diff / (1000 * 60 * 60));
-      // const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      
-      // setTimeLeft({ hours, minutes });
-    }, 60000);
-
-    return () => {
-      // clearInterval(interval);
-      clearInterval(timer);
-    };
-  }, []);
-
   // const handleWhatsAppClick = () => {
-  //   window.open('https://wa.me/598098451021', '_blank');
+  //   window.open(CONTACT.whatsappUrl, '_blank');
+  //   window.open('https://t.me/verdufastbot', '_blank');
   // };
 
   return (
@@ -47,7 +18,7 @@ const Hero = () => {
         }} />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
@@ -83,47 +54,33 @@ const Hero = () => {
 
             {/* Subheadline */}
             <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-              Productos ultra frescos directo del mercado a tu puerta. 
-              Pedí fácil por celular y recibí en el día.
+              Tu tienda de barrio de siempre, ahora con pedidos por QR y recompra en un toque.
+              Sin marketplace, sin competencia entre comercios.
             </p>
 
-            {/* Key Benefits */}
-            <div className="grid grid-cols-2 gap-4 mb-8">
-              {/* <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">Entrega 30-90 min</span>
-              </div> */}
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">100% fresco</span>
+            <div className="grid sm:grid-cols-3 gap-3 mb-8">
+              <div className="rounded-xl border border-emerald-100 bg-white/90 p-3">
+                <div className="flex items-center gap-2 text-emerald-700">
+                  <QrCode className="w-4 h-4" />
+                  <span className="text-sm font-semibold">Acceso por QR</span>
+                </div>
+                <p className="mt-1 text-xs text-gray-600">Entrás directo a tu tienda digital de confianza.</p>
               </div>
-              {/* <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">Precios justos</span>
-              </div> */}
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">Pago flexible</span>
+              <div className="rounded-xl border border-blue-100 bg-white/90 p-3">
+                <div className="flex items-center gap-2 text-blue-700">
+                  <Store className="w-4 h-4" />
+                  <span className="text-sm font-semibold">Sin marketplace</span>
+                </div>
+                <p className="mt-1 text-xs text-gray-600">Sin comparaciones entre tiendas ni competencia interna.</p>
+              </div>
+              <div className="rounded-xl border border-orange-100 bg-white/90 p-3">
+                <div className="flex items-center gap-2 text-orange-700">
+                  <Truck className="w-4 h-4" />
+                  <span className="text-sm font-semibold">Entrega coordinada</span>
+                </div>
+                <p className="mt-1 text-xs text-gray-600">Recibí tu pedido en franja horaria confirmada.</p>
               </div>
             </div>
-
-            {/* CTA Buttons */}
-            {/* <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <button
-                onClick={handleWhatsAppClick}
-                className="group bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center space-x-2"
-              >
-                <span>📱 Pedí por WhatsApp</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              
-              <a
-                href="tel:+59898451021"
-                className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2"
-              >
-                <span>📞 Llamar ahora</span>
-              </a>
-            </div> */}
 
             {/* Urgency Timer */}
             {/* <div className="inline-flex items-center space-x-2 bg-orange-100 text-orange-800 px-4 py-2 rounded-lg text-sm">
@@ -133,21 +90,9 @@ const Hero = () => {
               </span>
             </div> */}
 
-            {/* Trust Indicators */}
-            <div className="flex items-center justify-center lg:justify-start space-x-6 mt-8 text-sm text-gray-500">
-              <div className="flex items-center space-x-1">
-                <Shield className="w-4 h-4" />
-                <span>Pago seguro</span>
-              </div>
-              {/* <div className="flex items-center space-x-1">
-                <span>🚚</span>
-                <span>Envío gratis +$800</span>
-              </div> */}
-              {/* <div className="flex items-center space-x-1">
-                <span>💰</span>
-                <span>Garantía de frescura</span>
-              </div> */}
-            </div>
+            <p className="mt-2 text-sm text-gray-500">
+              Experiencia simple, rápida y enfocada en el vínculo entre cada comercio y sus vecinos.
+            </p>
           </div>
 
           {/* Visual */}
@@ -159,6 +104,7 @@ const Hero = () => {
                   src="https://images.pexels.com/photos/1300972/pexels-photo-1300972.jpeg?auto=compress&cs=tinysrgb&w=600"
                   alt="Frutas y verduras frescas"
                   className="w-full h-80 object-cover rounded-2xl"
+                  loading="lazy"
                 />
                 
                 {/* Floating Elements */}

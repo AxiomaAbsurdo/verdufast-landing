@@ -1,31 +1,28 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Search, Clock, Truck, CreditCard, Leaf, Phone, MessageCircle } from 'lucide-react';
+import { ChevronDown, ChevronUp, Search, Clock, Truck, CreditCard, Gift, Phone, MessageCircle, Store } from 'lucide-react';
+import { CONTACT } from '../config/contact';
 
-const FAQ: React.FC = () => {
+export default function FAQ() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
   const [searchTerm, setSearchTerm] = useState('');
 
   const faqs = [
     {
-      category: "Pedidos",
+      category: "Para Clientes",
       icon: <MessageCircle className="w-5 h-5" />,
       questions: [
         {
-          question: "¿Cómo hago un pedido?",
-          answer: "Es súper fácil. Ingresá a nuestra tienda online, elegí tus productos favoritos, agregálos al carrito, completá tus datos de entrega y confirmá tu pedido. Recibirás una confirmación inmediata con tu número de orden."
+          question: "¿Cómo compro desde el QR de mi tienda de barrio?",
+          answer: "Escaneá el QR del comercio y vas a entrar directo a su tienda digital. Desde ahí elegís productos, confirmás la entrega y pagás, sin salir a comparar con otras tiendas."
         },
         {
-          question: "¿Puedo ver mi historial de pedidos?",
-          answer: "Sí, al crear una cuenta podés acceder a tu historial de pedidos y repetir tus compras favoritas de manera más rápida."
-        },
-        {
-          question: "¿Puedo modificar mi pedido después de confirmarlo?",
-          answer: "Contactanos lo antes posible después de confirmar tu pedido. Mientras no haya comenzado la preparación, podemos ayudarte con los cambios."
+          question: "¿Puedo repetir mi último pedido?",
+          answer: "Sí. Podés usar la opción de recompra para repetir tu pedido anterior en un toque y ajustar cantidades antes de confirmar."
         }
       ]
     },
     {
-      category: "Entrega",
+      category: "Pedidos y Entrega",
       icon: <Truck className="w-5 h-5" />,
       questions: [
         {
@@ -43,25 +40,25 @@ const FAQ: React.FC = () => {
       ]
     },
     {
-      category: "Productos",
-      icon: <Leaf className="w-5 h-5" />,
+      category: "Fidelización y Promos",
+      icon: <Gift className="w-5 h-5" />,
       questions: [
         {
-          question: "¿Qué tan frescos son los productos?",
-          answer: "Trabajamos directamente con productores locales para garantizar la máxima frescura. Los productos se seleccionan cuidadosamente para cada pedido."
+          question: "¿Cómo funciona el beneficio de fidelidad?",
+          answer: "Tu progreso se acumula por pedidos completados. Ejemplo: 5 pedidos = envío gratuito en tu próxima compra, según las condiciones de tu tienda."
         },
         {
-          question: "¿Puedo agregar instrucciones especiales?",
-          answer: "¡Sí! Al completar tu pedido podés agregar notas de entrega con instrucciones especiales o preferencias sobre los productos."
+          question: "¿Puedo recibir avisos de mis productos favoritos?",
+          answer: "Sí. Te podemos notificar cuando vuelva el stock de productos que comprás seguido o cuando haya una promo relevante para vos."
         },
         {
-          question: "¿Qué pasa si un producto no está disponible?",
-          answer: "Te contactamos inmediatamente para ofrecerte alternativas similares o ajustar tu pedido. Nunca sustituimos productos sin tu autorización."
+          question: "¿Las promociones son iguales en todas las tiendas?",
+          answer: "No. Cada comercio define sus promociones y bundles según su clientela y disponibilidad, manteniendo su identidad local."
         }
       ]
     },
     {
-      category: "Pagos",
+      category: "Pagos y Seguridad",
       icon: <CreditCard className="w-5 h-5" />,
       questions: [
         {
@@ -75,6 +72,24 @@ const FAQ: React.FC = () => {
         {
           question: "¿Puedo pagar en efectivo?",
           answer: "Sí, podés elegir la opción 'Pago Contra Entrega' y pagar en efectivo al momento de recibir tu pedido. O realizar el pago con el POST de Debito que el delivery puede llevar cuando se haga la entrega de tu pedido."
+        }
+      ]
+    },
+    {
+      category: "Para Tiendas",
+      icon: <Store className="w-5 h-5" />,
+      questions: [
+        {
+          question: "¿VerduFast funciona como marketplace?",
+          answer: "No. VerduFast no compara ni posiciona tiendas entre sí. Cada comercio atiende a sus propios clientes con su propio QR y tienda digital."
+        },
+        {
+          question: "¿Cómo ayuda VerduFast a mejorar la rentabilidad del negocio?",
+          answer: "Facilita recompra, promociones y fidelización para aumentar la frecuencia de compra y el ticket promedio, sin perder margen frente a intermediarios."
+        },
+        {
+          question: "¿Sirve para planificar mejor el inventario?",
+          answer: "Sí. Los patrones de pedidos recurrentes ayudan a prever demanda, priorizar productos de alta rotación y reducir desperdicio."
         }
       ]
     }
@@ -132,7 +147,7 @@ const FAQ: React.FC = () => {
 
         {/* FAQ Categories (when not searching) */}
         {!searchTerm && (
-          <div className="grid md:grid-cols-4 gap-4 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
             {faqs.map((category, index) => (
               <div
                 key={index}
@@ -209,14 +224,14 @@ const FAQ: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+59898451021"
+                href={`tel:${CONTACT.phoneE164}`}
                 className="inline-flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-xl font-medium transition-colors"
               >
                 <Phone className="w-5 h-5" />
                 <span>Llamar ahora</span>
               </a>
               <button
-                onClick={() => window.open('https://wa.me/598098451021', '_blank')}
+                onClick={() => window.open(CONTACT.whatsappUrl, '_blank', 'noopener,noreferrer')}
                 className="inline-flex items-center space-x-2 border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-6 py-3 rounded-xl font-medium transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -237,15 +252,15 @@ const FAQ: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+598092484485"
+              href={`tel:${CONTACT.phoneE164}`}
               className="inline-flex items-center space-x-2 bg-white text-emerald-600 hover:bg-gray-100 px-6 py-3 rounded-xl font-semibold transition-colors"
             >
               <Phone className="w-5 h-5" />
-              <span>098 451 021</span>
+              <span>{CONTACT.phoneDisplay}</span>
             </a>
             
             <a
-              href="https://wa.me/598098451021"
+              href={CONTACT.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 border-2 border-white text-white hover:bg-white hover:text-emerald-600 px-6 py-3 rounded-xl font-semibold transition-colors"
@@ -257,12 +272,10 @@ const FAQ: React.FC = () => {
 
           <div className="mt-6 flex items-center justify-center space-x-2 text-emerald-200 text-sm">
             <Clock className="w-4 h-4" />
-            <span>Atención: Lunes a Domingo 8:00 AM - 8:00 PM</span>
+            <span>Atención: {CONTACT.serviceHours}</span>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default FAQ;
+}

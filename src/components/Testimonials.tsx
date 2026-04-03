@@ -129,6 +129,7 @@ const Testimonials = () => {
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover"
+                  loading="lazy"
                 />
                 <div className="flex-1">
                   <div className="flex items-center space-x-2">

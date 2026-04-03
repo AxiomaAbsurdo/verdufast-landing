@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, MessageCircle } from 'lucide-react';
+import { CONTACT } from '../config/contact';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -75,10 +76,10 @@ const Footer = () => {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/598098451021"
+                href={CONTACT.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
               </a>
@@ -124,10 +125,10 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-emerald-400 flex-shrink-0" />
                 <div>
                   <a
-                    href="tel:+598092484485"
+                    href={`tel:${CONTACT.phoneE164}`}
                     className="text-gray-300 hover:text-emerald-400 transition-colors"
                   >
-                    098 451 021
+                    {CONTACT.phoneDisplay}
                   </a>
                   <p className="text-gray-500 text-sm">Llamadas y WhatsApp</p>
                 </div>
@@ -137,10 +138,10 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-emerald-400 flex-shrink-0" />
                 <div>
                   <a
-                    href="mailto:info@verdufast.uy"
+                    href={`mailto:${CONTACT.supportEmail}`}
                     className="text-gray-300 hover:text-emerald-400 transition-colors"
                   >
-                    info@verdufast.uy
+                    {CONTACT.supportEmail}
                   </a>
                   <p className="text-gray-500 text-sm">Consultas generales</p>
                 </div>
@@ -184,7 +185,7 @@ const Footer = () => {
                 Estamos expandiendo constantemente. Consultanos por tu zona.
               </p>
               <a
-                href="tel:+598092484485"
+                href={`tel:${CONTACT.phoneE164}`}
                 className="inline-flex items-center space-x-2 text-emerald-400 hover:text-emerald-300 transition-colors text-sm"
               >
                 <Phone className="w-4 h-4" />
@@ -221,7 +222,7 @@ const Footer = () => {
       {/* Floating CTA Button for Mobile */}
       <div className="fixed bottom-6 right-6 z-50 md:hidden">
         <button
-          onClick={() => window.open('https://wa.me/598098451021', '_blank')}
+          onClick={() => window.open(CONTACT.whatsappUrl, '_blank', 'noopener,noreferrer')}
           className="bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110"
         >
           <MessageCircle className="w-6 h-6" />
