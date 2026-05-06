@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -23,6 +24,7 @@ function App() {
       {/* <Pricing /> DISABLED - Contains "Precios Transparentes", "Calculá tu Costo de Envío", and "¿Listo para hacer tu primer pedido?" sections */}
       <FAQ />
       <Footer />
+      <Analytics />
     </div>
   );
 }
