@@ -4,10 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import ProfitabilitySection from './components/ProfitabilitySection';
-// import HowItWorks from './components/HowItWorks'; // DISABLED
-// import Products from './components/Products'; // DISABLED
 import Testimonials from './components/Testimonials';
-// import Pricing from './components/Pricing'; // DISABLED
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
@@ -15,14 +12,13 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <Hero />
-      <Features />
-      <ProfitabilitySection />
-      {/* <HowItWorks /> DISABLED - Contains "¿Cómo funciona?" and "¿Listo para probar?" sections */}
-      {/* <Products /> DISABLED - Contains "Productos Frescos" section */}
-      <Testimonials />
-      {/* <Pricing /> DISABLED - Contains "Precios Transparentes", "Calculá tu Costo de Envío", and "¿Listo para hacer tu primer pedido?" sections */}
-      <FAQ />
+      <main id="contenido-principal">
+        <Hero />
+        <Features />
+        <ProfitabilitySection />
+        <Testimonials />
+        <FAQ />
+      </main>
       <Footer />
       <Analytics />
     </div>

@@ -23,7 +23,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="/VerduFast.png" 
+              src="/verduFastLogo-1.png" 
               alt="VerduFast" 
               className="h-8 w-auto"
               onError={(e) => {
@@ -47,8 +47,17 @@ const Header = () => {
             {/* <a href="#precios" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Precios
             </a> DISABLED */}
+            <a href="#beneficios" className="text-gray-700 hover:text-emerald-600 transition-colors">
+              Beneficios
+            </a>
+            <a href="#rentabilidad" className="text-gray-700 hover:text-emerald-600 transition-colors">
+              Para Tiendas
+            </a>
             <a href="#testimonios" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Testimonios
+            </a>
+            <a href="#faq" className="text-gray-700 hover:text-emerald-600 transition-colors">
+              FAQ
             </a>
             <a href="#contacto" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Contacto
@@ -92,8 +101,17 @@ const Header = () => {
               {/* <a href="#precios" className="text-gray-700 hover:text-emerald-600 transition-colors">
                 Precios
               </a> DISABLED */}
+              <a href="#beneficios" className="text-gray-700 hover:text-emerald-600 transition-colors">
+                Beneficios
+              </a>
+              <a href="#rentabilidad" className="text-gray-700 hover:text-emerald-600 transition-colors">
+                Para Tiendas
+              </a>
               <a href="#testimonios" className="text-gray-700 hover:text-emerald-600 transition-colors">
                 Testimonios
+              </a>
+              <a href="#faq" className="text-gray-700 hover:text-emerald-600 transition-colors">
+                FAQ
               </a>
               <a href="#contacto" className="text-gray-700 hover:text-emerald-600 transition-colors">
                 Contacto

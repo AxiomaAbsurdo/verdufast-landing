@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="/VerduFast.png" 
+                src="/verduFastLogo-1.png" 
                 alt="VerduFast" 
                 className="h-8 w-auto"
                 onError={(e) => {
